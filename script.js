@@ -38,11 +38,11 @@ document.querySelector('.check').addEventListener('click', () => {
   else if (guess !== secretNumber) {
     if (score > 1) {
       // else if (guess > secretNumber) {
-      displayMessage(guess > secretNumber ? ' 📈 To high!' : ' 📉 To low!');
+      displayMessage(guess > secretNumber ? ' 📈 Too high!' : ' 📉 Too low!');
       score--;
       document.querySelector('.score').textContent = score;
     } else {
-      displayMessage('You are lost!');
+      displayMessage('You lost!');
       document.querySelector('.score').textContent = 0;
     }
   }
